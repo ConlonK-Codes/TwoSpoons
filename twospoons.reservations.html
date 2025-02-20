@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TwoSpoons</title>
+
+</head>
+
+  <!-- Header Section -->
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background-color: #f8f8f8; border-bottom: 1px solid #ddd;">
+    <div>
+      <a href="twospoons.index.html" style="text-decoration: none;">
+        <img src="provisions/2spoonlogomain.jpg" alt="Restaurant Logo" style="height: 70px; width: auto;">
+      </a>
+    </div>
+    <h1 style="margin: 0; font-size: 28px;">Make a Reservation</h1>
+    <nav>
+      <a href="twospoons.index.html" style="text-decoration: none; color: white; background-color: #b22222; font-size: 16px; padding: 10px 15px; border-radius: 5px; border: none;">Back Home</a>
+    </nav>
+  </header>
+
+  <!-- Reservation Form -->
+  <section style="max-width: 600px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center;">Reserve Your Table</h2>
+    <form>
+      <fieldset style="border: 1px solid #ddd; padding: 15px; margin-bottom: 15px;">
+        <legend style="font-weight: bold;">Personal Information</legend>
+        <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
+        <input type="text" id="name" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+        <input type="email" id="email" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="phone" style="display: block; margin-bottom: 5px;">Phone:</label>
+        <input type="tel" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+      </fieldset>
+
+      <fieldset style="border: 1px solid #ddd; padding: 15px; margin-bottom: 15px;">
+        <legend style="font-weight: bold;">Reservation Details</legend>
+        <label for="date" style="display: block; margin-bottom: 5px;">Date:</label>
+        <input type="date" id="date" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="time" style="display: block; margin-bottom: 5px;">Time:</label>
+        <input type="time" id="time" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="guests" style="display: block; margin-bottom: 5px;">Number of guests:</label>
+        <input type="number" id="guests" min="1" max="15" required style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        
+        <label for="comments" style="display: block; margin-bottom: 5px;">Additional Comments:</label>
+        <textarea id="comments" rows="4" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" placeholder="Write any special requests here..."></textarea>
+      </fieldset>
+
+      <button type="submit" style="width: 100%; padding: 10px; background-color: #b22222; color: white; font-size: 16px; border: none; border-radius: 5px; cursor: pointer;">Submit Reservation</button>
+    </form>
+  </section>
+
+  <!-- Reservation Policies -->
+  <section style="max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #b22222;">Reservation Policies</h2>
+
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: #333;">Reservation Guidelines</h3>
+      <p style="color: #555; font-size: 16px; line-height: 1.6;">
+        We accept reservations up to 30 days in advance. All reservations are held for a maximum of 15 minutes past the booking time.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <h3 style="color: #333;">Large Group Bookings</h3>
+      <p style="color: #555; font-size: 16px; line-height: 1.6;">
+        For groups of 10 or more, please call our restaurant directly to ensure we can accommodate your party. A deposit may be required for groups larger than 10.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="color: #333;">Cancellation Policy</h3>
+      <p style="color: #555; font-size: 16px; line-height: 1.6;">
+        We understand plans change. If you need to cancel, please notify us at least 24 hours in advance. Late cancellations may be subject to a fee.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
